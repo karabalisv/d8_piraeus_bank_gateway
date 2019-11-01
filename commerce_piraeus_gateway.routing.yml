@@ -1,0 +1,7 @@
+commerce_piraeus_gateway.callback:
+  path: '/winbank/callback'
+  defaults:
+    _controller: '\Drupal\commerce_piraeus_gateway\Controller\CallbackController::callback'
+    _title: 'Piraeus Bank Paycenter callback'
+  requirements:
+    _commerce_piraeus_gateway_callback_access_check: 'TRUE'

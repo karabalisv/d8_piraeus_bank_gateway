@@ -1,0 +1,27 @@
+commerce_piraeus_gateway.commerce_piraeus_gateway.plugin.piraeus_redirect_checkout:
+  type: commerce_payment_gateway_configuration
+  mapping:
+    username:
+      type: string
+      label: 'Username'
+    password:
+      type: string
+      label: 'Password'
+    merchant_id:
+      type: string
+      label: 'MerchantId'
+    acquirer_id:
+      type: string
+      label: 'AcquirerId'
+    pos_id:
+      type: string
+      label: 'PosId'
+    language:
+      type: string
+      label: 'Language'
+    currency_code:
+      type: string
+      label: 'CurrencyCode'
+    parameters:
+      type: string
+      label: 'Parameters'

@@ -1,0 +1,7 @@
+name: Commerce Piraeus Gateway
+type: module
+description: 'Provides Commerce integration for Pireaus Bank Paycenter.'
+package: Eg
+core: 8.x
+dependencies:
+  - commerce:commerce_payment

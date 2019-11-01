@@ -1,0 +1,13 @@
+services:
+  logger.channel.commerce_piraeus_gateway:
+    parent: logger.channel_base
+    arguments:
+      - 'commerce_piraeus_gateway'
+  commerce_piraeus_gateway.currency_calculator:
+    class: Drupal\commerce_piraeus_gateway\CurrencyCalculator
+  commerce_piraeus_gateway.access_checker:
+    class: Drupal\commerce_piraeus_gateway\Access\CallbackAccess
+    arguments:
+      - '@logger.channel.commerce_piraeus_gateway'
+    tags:
+      - { name: access_check, applies_to: _commerce_piraeus_gateway_callback_access_check }
